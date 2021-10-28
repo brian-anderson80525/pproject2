@@ -17,7 +17,7 @@ const router = express.Router()
 router.get("/", (req, res) => {
     List.find({})
     .then((list) => {
-        res.json(list)
+        res.render("index.liquid", {list})
     })
 } )
 

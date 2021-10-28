@@ -8,7 +8,7 @@ const morgan = require("morgan")
 const methodOverride = require("method-override")
 const path = require("path")
 const liquid = require("liquid-express-views")
-const ListRouter = require("./controllers/list.js")
+const ListRouter = require("./controllers/list")
 
 
 
