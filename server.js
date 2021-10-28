@@ -8,7 +8,7 @@ const morgan = require("morgan")
 const methodOverride = require("method-override")
 const path = require("path")
 const liquid = require("liquid-express-views")
-// const FruitsRouter = require("./controllers/fruit")
+const ListRouter = require("./controllers/list.js")
 
 
 
@@ -34,10 +34,12 @@ app.use(express.static("public"))
 ////////////////////////////////////////
 // Routes
 /////////////////////////////////////////
-app.get("/", (req, res) => {
-    res.send("This App is working")
-})
+// app.get("/", (req, res) => {
+//     res.send("This App is working")
+// })
 
+// Register Router
+app.use("/list", ListRouter)
 
 
 
