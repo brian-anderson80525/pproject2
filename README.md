@@ -36,6 +36,7 @@ Our user is someone who is currently using a general purpose notes app like Ever
 - Express
 - html, css
 - Javascript
+- Liquid for templates
 - Mongoose
 - MongoDB (database)
 - band-aids, gatoraid, kleenex (for the blood, sweat & tears)
