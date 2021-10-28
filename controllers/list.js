@@ -13,19 +13,20 @@ const router = express.Router()
 // create the 7 routes
 /////////////////
 
-// 1 index route - get - /fruits
+// 1 index route - get the list of items - /list
 router.get("/", (req, res) => {
-    //find all the fruits
-    Fruit.find({username: req.session.username})
-    .then((fruits) => {
-        // render the index template with the fruits
-        res.render("fruits/index.liquid", {fruits})
+    List.find({})
+    .then((list) => {
+        res.json(list)
     })
-    // error handling
-    .catch((error) => {
-        res.json({error})
-    })
-})
+} )
+
+
+
+    
+
+    
+
 
 // export my model
 module.exports = router
