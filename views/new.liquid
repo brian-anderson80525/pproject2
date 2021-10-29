@@ -1,0 +1,23 @@
+{% layout "layout.liquid" %}
+
+{% block content %}
+
+<div>
+
+    <form action="/list" method="post">
+     <fieldset>
+       <legend>Create a New Item</legend>
+           <label>
+               Item: <input type="text" name="name" placeholder="whatcha need?"/>
+           </label>
+           <label>
+               Quantity: <input type="number" name="qty" placeholder="how many?"/>
+           </label>
+       </fieldset>
+       <input type="submit" value="add new item"/>
+    </form>
+   
+   </div>
+
+
+{% endblock %}

@@ -25,7 +25,10 @@ router.get("/", (req, res) => {
     })
 })
 
-
+// 3 new route - get request - create part1
+router.get("/new", (req, res) => {
+    res.render("new.liquid")
+})
 
 
 
