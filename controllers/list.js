@@ -60,6 +60,23 @@ router.get("/:id/edit", (req, res) => {
     })
 })
 
+// 6 update route - put request - "/fruits/:id"
+router.put("/:id", (req, res) => {
+    const id = req.params.id
+
+    // update the item with the matching id
+    List.findByIdAndUpdate(id, req.body, {new: true})
+    .then((list) => {
+        // redirect user back to index
+        res.redirect("/list")
+    })
+     // error handling
+     .catch((error) => {
+        res.json({error})
+    })
+})
+
+
 
 
 
