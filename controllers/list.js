@@ -19,13 +19,34 @@ router.get("/", (req, res) => {
     .then((list) => {
         res.render("index.liquid", {list})
     })
-} )
+    // error handling
+    .catch((error) => {
+        res.json({error})
+    })
+})
+
+
+
 
 
 
     
 
-    
+   // 2 show route - get - /fruits/:id
+router.get("/:id", (req, res) => {
+   
+    const id = req.params.id
+    // get that particular fruit from the database
+    List.findById(id)
+    .then((list) => {
+        // render the show template with the fruit
+        res.render("show.liquid", {list})
+    })
+    // error handling
+    .catch((error) => {
+        res.json({error})
+    })
+}) 
 
 
 // export my model

@@ -11,12 +11,12 @@ List.deleteMany({})
 .then(() => {
     //seed data
     const seedList = [
-        {item: "apples"},
-        {item: "grapes"},
-        {item: "chicken thighs"},
-        {item: "creamer"},
-        {item: "coffee"},
-        {item: "eggs"}
+        {item: "grapes", qty: 1},
+        {item: "apples", qty: 1},
+        {item: "chicken thighs", qty: 1},
+        {item: "creamer", qty: 1},
+        {item: "coffee", qty: 1},
+        {item: "eggs", qty: 1}
     ]
     List.create(seedList).then((list) =>{
         console.log(list)
