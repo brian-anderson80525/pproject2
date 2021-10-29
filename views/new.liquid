@@ -1,7 +1,26 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../styles.css">
+    <script src="../app.js" defer></script>
+
+
 {% layout "layout.liquid" %}
+
 
 {% block content %}
 
+<button data-modal-target="#modal">Before you add an item</button>
+<div class="modal" id="modal">
+    <div class="m_header">
+         <div class="title1">Warning!!!</div>
+        <button data-close-button class="close-it">&times;</button>
+    </div>
+<div class="m_body">
+        Because this super-AWESOME-how-did-I-live-without-it app is fun to use everyday, it's important to note that neither Gadget Geek Apps or Brian Anderson are responsible for you becoming addicted to shopping.  Nor are they responsible for any debt that you may incur while using this app to do that shopping. Closing this warning releases Brian & Gadget Geek Apps from all liability.  
+</div>
+ </div>
+<div id="overlay"></div>
 <div>
 
     <form action="/list" method="post">
@@ -18,6 +37,7 @@
     </form>
    
    </div>
+
 
 
 {% endblock %}
