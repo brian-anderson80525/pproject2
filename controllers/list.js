@@ -30,6 +30,25 @@ router.get("/new", (req, res) => {
     res.render("new.liquid")
 })
 
+// 4 create - post request - create part 2
+router.post("/", (req, res) => {
+
+
+    // create the new fruit
+    List.create(req.body)
+    .then((list) => {
+        // redirect the user back to the index route
+        res.redirect("/list")
+    })
+    // error handling
+    .catch((error) => {
+        res.json({error})
+    })
+
+})
+
+
+
 
 
 
