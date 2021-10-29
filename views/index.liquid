@@ -8,6 +8,8 @@
 
 <div class=item>
     <h2 class="each"><a href="list/{{ea._id}}">{{ea.item}}</a></h2>
+    <form action="/list/{{ ea._id }}?_method=DELETE" method="post">
+        <input type="submit" value="DELETE"></form>
 
 </div>
 

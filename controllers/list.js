@@ -76,6 +76,21 @@ router.put("/:id", (req, res) => {
     })
 })
 
+// 7. destroy route - delete request - /fruits/:id
+router.delete("/:id", (req, res) => {
+    const id = req.params.id
+    // delete the fruit
+    List.findByIdAndRemove(id)
+    .then((list) => {
+        // redirect user back to index
+        res.redirect("/list")
+    })
+     // error handling
+     .catch((error) => {
+        res.json({error})
+    })
+})
+
 
 
 
