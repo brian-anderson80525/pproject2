@@ -1,0 +1,25 @@
+{% layout "layout.liquid" %}
+
+
+{% block content%}
+
+<div>
+<!-- copied from my super fruits edit.liquid page -->
+    <form action="/list/{{ list._id }}?_method=PUT" method="post"></form>
+     <fieldset>
+       <legend>Edit The Item</legend>
+           <label>
+               Item: <input type="text" name="item" placeholder="enter item name" value="{{list.item}}"/>
+           </label>
+           <label>
+               Quantity: <input type="number" name="qty" placeholder="how many?" value="{{list.qty}}"/>
+           </label>
+       </fieldset>
+       <input type="submit" value="update {{ list.item }}"/>
+    </form>
+   
+   </div>
+
+
+
+{% endblock %}

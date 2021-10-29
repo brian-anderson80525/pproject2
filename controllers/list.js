@@ -32,12 +32,9 @@ router.get("/new", (req, res) => {
 
 // 4 create - post request - create part 2
 router.post("/", (req, res) => {
-
-
-    // create the new fruit
     List.create(req.body)
     .then((list) => {
-        // redirect the user back to the index route
+        // redirect back to the index route
         res.redirect("/list")
     })
     // error handling
@@ -46,6 +43,23 @@ router.post("/", (req, res) => {
     })
 
 })
+
+// 5 edit route - get request - /fruits/:id/edit
+router.get("/:id/edit", (req, res) => {
+    // get the id from params
+    const id = req.params.id
+    // get the "fruit" with the matching id
+    List.findById(id)
+    .then((list) => {
+        // render the edit page
+        res.render("edit.liquid", { list })
+    })
+    // error handling
+    .catch((error) => {
+        res.json({error})
+    })
+})
+
 
 
 
@@ -56,12 +70,11 @@ router.post("/", (req, res) => {
 
    // 2 show route - get - /fruits/:id
 router.get("/:id", (req, res) => {
-   
     const id = req.params.id
-    // get that particular fruit from the database
+    // get that particular "fruit" from the database
     List.findById(id)
     .then((list) => {
-        // render the show template with the fruit
+        // render the show template
         res.render("show.liquid", {list})
     })
     // error handling
