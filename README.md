@@ -38,7 +38,7 @@ Our user is someone who is currently using a general purpose notes app like Ever
 - My main struggle was with file paths in the beginning.  I did gradually get better at them and now have a better understanding.
 - I couldn't figure out the modal on just one page...one time, even Alex said it was "tricky" so i ended up googling and finding a work around using a button based YouTube tutorial (see below for url).  It was also in Discord.
 - I used a new/separate database for this build...of course it changed the DATABASE_URL in Heroku which took me like 90 minutes to figure out why it wasn't working.
-
+- my CSS is a mess. I was unsuccessful in getting my css to show on the edit.liquid page.  I tried a few different ways.  If you have a weak stomach, you may want to look away at that point...its ugly.
 ## List of Technologies
 - Express
 - html, css
