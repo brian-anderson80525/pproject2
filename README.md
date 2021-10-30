@@ -48,3 +48,4 @@ Our user is someone who is currently using a general purpose notes app like Ever
 - MongoDB (database)
 - For Modal - i followed the tutorial found at https://www.youtube.com/watch?v=MBaw_6cPmAw
 - band-aids, gatoraid, kleenex (for the blood, sweat & tears)
+- 5 hour energy drinks, coffee and pretzel chips...you are amazing and i couldn't do this without you.
