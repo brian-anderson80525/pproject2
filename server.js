@@ -39,7 +39,7 @@ app.use(express.static("public"))
 // })
 
 // Register Router
-app.get("/list", ListRouter)
+app.use("/list", ListRouter)
 
 
 
