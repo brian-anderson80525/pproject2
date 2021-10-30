@@ -2,14 +2,15 @@
 
 {% block content %}
 
+<div class="new_b">
 <a href="list/new"><button>Create New Item</button></a>
-
+</div>
 {% for ea in list %}
 
 <div class=item>
-    <h2 class="each"><a href="list/{{ea._id}}">{{ea.item}}</a></h2>
+    <p class="each"><a href="list/{{ea._id}}">{{ea.item}}</a></p>
         <div class="form">
-                <form action="/list/{{ ea._id }}?_method=DELETE" method="post">
+                <form class="delete" action="/list/{{ ea._id }}?_method=DELETE" method="post">
                 <input type="submit" value="Got It"></form>
         </div>
 

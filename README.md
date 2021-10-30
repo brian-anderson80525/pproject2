@@ -27,7 +27,12 @@ List your routes in a table
 | /list/:id | delete | remove the item from database (destroy)|
 
 ## User Stories
-Our user is someone who is currently using a general purpose notes app like Evernote for grocery shopping list.  While it kinda works, our user wants something that is easier to read (larger font size without everything on their phone being affected).  They want the items to "disappear" after marked, so their list stays current (only the items remaining need to be shopped for) and organized. 
+Our user is someone who is currently using a general purpose notes app like Evernote for grocery shopping list. Our user is able to:
+- mobile only experience
+- add items to the list as necessary
+- add or edit quantities if desired
+- edit items as necessary
+- see the list without reading glasses or changing phone settings
 ## Challenges
 
 - My main struggle was with file paths in the beginning.  I did gradually get better at them and now have a better understanding.

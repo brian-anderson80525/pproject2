@@ -1,0 +1,32 @@
+body {
+    background-color: lemonchiffon;
+}
+
+
+h1 {
+    text-align: center;
+    color: blue;
+    max-width: 600px;
+    
+}
+
+.item {
+    display: flex;
+    font-size: 1.25em;
+    justify-content: space-between;
+    max-width: 600px;
+    align-items: center;
+    text-decoration: none;
+    margin: 0px 10px 0 10px;
+    border: 1.5px floralwhite;
+}
+
+a {
+    text-decoration: none;
+    
+}
+div.new_b {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+}
