@@ -1,11 +1,13 @@
-body {
+* {
     background-color: lemonchiffon;
+    font-family: 'Acme', sans-serif;
+    
 }
 
 
 h1 {
     text-align: center;
-    color: blue;
+    color: darkblue;
     max-width: 600px;
     
 }
@@ -29,4 +31,13 @@ div.new_b {
     display: flex;
     align-items: center;
     max-width: 600px;
+    cursor: pointer;
+}
+button {
+    
+    cursor: pointer;
+}
+
+input {
+    cursor: pointer;
 }

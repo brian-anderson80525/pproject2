@@ -6,7 +6,11 @@
 
 *, *::after, *::before {
     box-sizing: border-box;
+    background-color: lemonchiffon;
+    font-family: 'Acme', sans-serif;
 }
+
+
 
 .modal {
     position: fixed;
@@ -32,13 +36,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid ghostwhite;
+    border-bottom: 2px solid darkred;
 }
 
 .m_header .title1 {
     font-size: 1.5rem;
     font-weight: 900;
-    color: ghostwhite;
+    color: darkred;
     text-align: center;
 }
 
@@ -49,13 +53,13 @@
     background: none;
     font-size: 2rem;
     font-weight: bold;
-    color: ghostwhite
+    color: darkred;
 
 }
 
 .m_body {
     padding: 10px 15px;
-    color: ghostwhite;
+    color: darkred;
     font-size: 1.25rem;
 }
 
@@ -67,7 +71,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(139, 0, 0, .5);
     pointer-events: none;
 }
 
