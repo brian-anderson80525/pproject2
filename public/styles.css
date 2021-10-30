@@ -2,7 +2,7 @@
 /* ////////////////////////////////////////// */
 /* modal styling section */
 /* ////////////////////////////////////////// */
-
+/* This is from a YouTube video tutorial (https://www.youtube.com/watch?v=MBaw_6cPmAw) on modals.  I was able to follow along, but couldnt have written this like this in vanilla js.  I think it would be easier in jquery.  next i will work on converting it to jquery. */
 
 *, *::after, *::before {
     box-sizing: border-box;

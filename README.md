@@ -31,7 +31,7 @@ Our user is someone who is currently using a general purpose notes app like Ever
 - mobile only experience
 - add items to the list as necessary
 - add or edit quantities if desired
-- edit items as necessary
+- delete items as they are picked up
 - see the list without reading glasses or changing phone settings
 ## Challenges
 
