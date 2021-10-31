@@ -34,9 +34,9 @@ app.use(express.static("public"))
 ////////////////////////////////////////
 // Routes
 /////////////////////////////////////////
-// app.get("/", (req, res) => {
-//     res.send("This App is working")
-// })
+app.get("/", (req, res) => {
+    res.redirect("/list")
+})
 
 // Register Router
 app.use("/list", ListRouter)
